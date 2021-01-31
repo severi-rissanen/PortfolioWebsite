@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 0px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Navbar 
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clients</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a>
+  </div>
+</div>-->
+
+<!-- Sidebar 
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+</nav>-->
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:10px">
+  
+  <div class="w3-row w3-padding-8">
+  	<div class="w3-twothird w3-container">
+  		<h2 class="w3-text-teal">Severi's school project website</h2>
+  		<p>This page contains links to some selected school projects that I consider to be relevant to the things that I'm working with currently (data science and machine learning), and which also included an original contribution with the choice of topic and methods used. All of them also had a nice report at the end, and most were done personally by me, apart from the Stackoverflow project. </p>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-8">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Bayesian occupancy modeling for the Eurasian Blue Tit in Finland</h2>
+      <p>
+      	Using data from the citizen science project by <a href="https://www.ebird.org">Ebird</a> combined with satellite data, I implemented a fully Bayesian occupancy model to analyze the occupancy of the Eurasian Blue Tit in Finland. The project was done as the final project in the Bayesian Data Analysis course at Aalto University. <a href="pdfs/Bayesian_Data_Analysis_Project.pdf">Link to project report.</a>
+      </p>
+      
+      	<div class="row">
+			<div class="column" float="left" style="width:25%">
+				<img src="images/BDA_bluetit.png" style="height:400px">
+			</div>
+			<div class="column" float="left" style="width:25%">
+				<img src="images/BDA_occupancy.png" style="height:400px">
+			</div>
+		</div>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-32">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Exploratory data analysis for stackoverflow user data</h2>
+      <p> This was a project work done in the Applied Data Analysis course at EPFL, with a team of four people (including me). Our idea was to analyze data from Stackoverflow users, questions and answers, with the overarching goal to look at Stackoverflow as a social network. My contribution was quite spread out over different parts of preprocessing and analysis, but one of my "advanced" contributions was the matrix factorization based clustering with respect to programming language use in section "Stack Overflower in a nutshell". <a href="https://stack-overflow-as-a-social-network.github.io/">Link to data story website.</a>
+      </p>
+
+      <div class="row">
+			<div class="column" float="left" style="width:50%">
+				<img src="images/ADA_personas.png" style="height:260px">
+			</div>
+			<div class="column" float="left" style="width:50%">
+				<img src="images/ADA_map.png" style="height:260px">
+			</div>
+		</div>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-32">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Visualizing the distribution of composers in the music played by the Helsinki Philharmonic Orchestra over the years</h2>
+      <p>
+      	This was a miniproject done for the Information Visualization course at Aalto University. I tried some different ways to visualize the distribution of composers and music played by the Helsinki Philharmonic Orchestra over its lifetime, and especially the composer diversity. Lots of obsessing about data-ink ratio and things like that. <a href="pdfs/Information_Visualization_miniproject.pdf">Link to project report.</a>
+      </p>
+      <div class="row">
+			<div class="column" float="left" style="width:35%">
+				<img src="images/infoviz_barplot.png" style="height:350px">
+			</div>
+			<div class="column" float="left" style="width:33%">
+				<img src="images/infoviz_popular.png" style="height:350px">
+			</div>
+		</div>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-32">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Using multiple correspondence analysis to analyze forest fires in a Portugese national park</h2>
+      <p>As the final project of the Multivariate Statistical Analysis course at Aalto University, I performed data analysis on a data set on forest fires in a Portugese national park. In addition to basic analysis, I used multiple correspondence analysis for exploring relations between different predictors for forest fires. <a href="pdfs/Multivariate_Statistical_Analysis_Project_work.pdf">Link to project report.</a>
+      </p>
+      <div class="row">
+			<div class="column" float="left" style="width:50%">
+				<img src="images/multivariate_MCA.png" style="height:400px">
+			</div>
+		</div>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-32">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Protein folding for a three-dimensional toy model using MCMC based simulated annealing</h2>
+      <p>
+      	As the project work for the Computational Physics course at Aalto, I studied a toy model for protein folding, and implemented an MCMC based simulated annealing routine for the folding. The idea for the toy model came from a paper which studied a two-dimensional model. I generalized it to three dimensions and came up with the exact modeling approach. <a href="pdfs/Computational_Physics_Project_Work.pdf">Link to project report.</a>
+      </p>
+      <div class="row">
+			<div class="column" float="left" style="width:30%">
+				<img src="images/compphys_illustration.png" style="height:400px">
+			</div>
+			<div class="column" float="left" style="width:33%">
+				<img src="images/compphys_chain.png" style="height:400px">
+			</div>
+		</div>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-32">
+    <div class="w3-twothird w3-container">
+      <h2 class="w3-text-teal">Simulation of a tunable coupler for implementing two-qubit gates between transmon qubits (Bachelor's thesis)</h2>
+      <p>
+      	This was my bachelor's thesis project work, where the topic was to simulate a certain two-qubit gate for quantum computers and investigate how good it is. I think that the things learned while doing it have been useful even with my current studies and work, at least from the scientific computing and writing perspective. <a href="pdfs/Bachelors_thesis.pdf">Link to the thesis</a>
+      </p>
+      <div class="row">
+			<div class="column" float="left" style="width:50%">
+				<img src="images/thesis_circuit.png" style="height:300px">
+			</div>
+			<div class="column" float="left" style="width:50%">
+				<img src="images/thesis_error.png" style="height:300px">
+			</div>
+		</div>
+    </div>
+  </div>
+
+  <!-- Pagination 
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a class="w3-button w3-black" href="#">1</a>
+      <a class="w3-button w3-hover-black" href="#">2</a>
+      <a class="w3-button w3-hover-black" href="#">3</a>
+      <a class="w3-button w3-hover-black" href="#">4</a>
+      <a class="w3-button w3-hover-black" href="#">5</a>
+      <a class="w3-button w3-hover-black" href="#">»</a>
+    </div>
+  </div>-->
+
+  <!--
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Footer</h4>
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  </footer>-->
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
